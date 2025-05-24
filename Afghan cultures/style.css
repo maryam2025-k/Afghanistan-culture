@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color:#eef1ee;
+    font-family:BioRhyme sans-serif;
+    color:#333446;
+}
+header {
+     background-color: #1a329c;
+     text-align: center;
+     color:white;
+}
+.containers{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+    background-color: #1a329c;
+}
+nav ul{
+    display: flex;
+    gap:1.5rem;
+    padding:10px  15px;
+}
+nav>ul>li>ul{
+    display: block;
+    position: absolute;
+    display: none;
+    margin: auto;
+}
+nav>ul>li:hover ul{
+    display: block;
+}
+nav>ul>li>ul>li{
+    border-bottom:1px solid #fff;
+    background-color: #1a329c;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-right: none;
+}
+nav li{
+    list-style: none;
+    padding:0%;
+    margin-top: 0%;
+  
+}
+nav a{
+    color:inherit;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    padding:5px 5px ;
+}
+nav a:active{
+    text-decoration: underline;
+}
+#map{
+    width:100%;
+    height: 500px;
+    background-image: url(Blue_Mosque_in_the_northern_Afghan_city_in_2012.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+#map,h1{
+    text-align: center;
+    color:#1a329c;
+    text-shadow: 2px 2px 10px black;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 2rem;
+}
+.logo{
+    margin-right: 1%;
+    margin-top: 1%;
+    width:10%;
+    height: 20%;
+    float: right;
+    animation:logo 10s forwards infinite;
+}
+@keyframes logo{
+0%{
+    filter:blur(0px);
+    transform:scale(0);
+}
+25%{
+    filter: brightness(70px);
+}
+50%{
+    filter:contrast(180px);
+    transform:scale(3)
+}
+75%{
+    filter:brightness(100px);
+    
+}
+100%{
+    filter: saturate(4);
+    transform:scale(0);
+}
+}
+.search{
+    border-radius: 0 10px 10px 10px;
+    background-color: #1a329c;
+    border:1.5px solid #faf7f7;
+    background-image: url(magnifying-glass.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width:210px;
+    box-sizing: border-box;
+    transition: width 1s cubic-bezier(0.075, 0.82, 0.165, 1), background-color 1s linear;  
+}
+input[type=search]{
+    padding: 10px 15px 10px 100px;
+    box-sizing: border-box;
+}
+.search:focus{
+    width:300px;
+    background-color: #D5E5D5;
+}
+.search::placeholder{
+    font-size: 20px;
+    font-family:Coral Pixels;
+}
+.text{
+    display:flex;
+    justify-items: center;
+    padding:0.5rem;
+    padding:40px 10px ;
+    width:100%;
+}
+.light{
+    background-color: #dce1fa;
+}
+.img{
+    border:1px solid #c3c5f5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(10, 10, 10);
+    height: 300px;
+    
+}
+.img img{
+    border-radius: 10px;
+}
+.context{
+    padding:1.5rem ;
+    font-size: 15px;
+    text-justify: auto;
+}
+h2{
+    text-align: center;
+}
+.Img{
+    border:1px solid #333446;
+}
+h2{
+    text-align: center;
+    padding:20px;
+    color: #1a329c;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px black;
+}
+.card-container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    padding:1.5rem 0.5rem 1.5rem 0.5rem;
+}
+.card{
+    border: 1px solid #484fd65b;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0 30px 0 30px;
+    box-shadow: 5px 5px 5px 5px;
+    text-align: center;
+    width: 400px;
+}
+.card img{
+    border-radius: 10px;
+}
+.table{
+    padding: 1rem;
+}
+tr,td{
+    border-bottom: 1.5px solid  #333446;   
+    height: 30px;
+}
+tr:nth-child(even){
+    background-color: #dadbf7;
+}
+tr:hover{
+    background-color:#1a329c;
+    cursor: pointer;
+}
+footer{
+     background-color: #1a329c;
+     overflow:auto;
+     padding-top: 3%;
+     display:flex;
+     justify-content: space-between;
+     gap:20px;
+     padding-bottom: 3%;
+     color:white;  
+}
+input[type=text],textarea{
+    width:100%;
+    padding:5%;
+    box-sizing: border-box;
+    margin:10px 0;
+    border:solid 2px #333446;
+    border-radius: 5px;
+}
+ textarea::placeholder, input::placeholder{
+    color:#333446;
+    font-family: coral pixels;   
+ }
+.label{
+    width:10%;
+    float:left
+}
+#left-footer{
+    margin-left:50px;
+    width:50%;
+}
+.send{
+    background-color: #333446;
+    float:right;
+    width:150px;
+    height:40px;
+    color:white;
+    margin-right:150px;
+}
+.send:hover{
+    box-shadow: 0 10px 10px black;
+    cursor: pointer;
+}
+textarea{
+    resize:none;
+}
+.fill{
+    width:70%;
+    margin-left:200px;
+}
+.lab{
+    color:#fff;
+    padding:10px 0;
+    margin:10px;
+    display:block;
+}
+.righfooter{
+   text-align:center;
+   width:50%;
+   padding:1rem;
+}
+.a{
+    font-size: 40px;
+    padding:1rem;
+    color:white;
+}
+.a:hover{
+    color:#18181b;
+    cursor: pointer;
+}
